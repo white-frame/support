@@ -1,0 +1,20 @@
+{
+  "name": "white-frame/support",
+  "description": "White Frame Support package",
+  "license": "WTFPL",
+  "authors": [
+    {
+      "name": "Anael Favre",
+      "email": "anael.favre@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "WhiteFrame\\Support\\": "src/"
+    }
+  },
+  "require": {
+    "illuminate/support": "5.1.*",
+    "white-frame/white-frame": "5.1.*"
+  }
+}
