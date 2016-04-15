@@ -18,6 +18,6 @@
   },
   "require": {
     "illuminate/support": "~5.1",
-    "white-frame/white-frame": "~5.1"
+    "white-frame/framework": "~5.1"
   }
 }
