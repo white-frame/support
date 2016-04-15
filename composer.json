@@ -17,7 +17,6 @@
     ]
   },
   "require": {
-    "illuminate/support": "~5.1",
-    "white-frame/support": "~5.1"
+    "illuminate/support": "~5.1"
   }
 }
