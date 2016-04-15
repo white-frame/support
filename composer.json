@@ -11,7 +11,10 @@
   "autoload": {
     "psr-4": {
       "WhiteFrame\\Support\\": "src/"
-    }
+    },
+    "files": [
+      "src/Helper/helpers.php"
+    ]
   },
   "require": {
     "illuminate/support": "5.1.*",

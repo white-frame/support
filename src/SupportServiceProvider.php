@@ -20,7 +20,9 @@ class SupportServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
+        $this->app->singleton('white-frame.support.helper.manager', function ($app) {
+            return new \WhiteFrame\Support\Helper\Manager();
+        });
     }
 
     /**
