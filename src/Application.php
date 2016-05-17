@@ -42,6 +42,12 @@ class Application
 		self::getApplication()->alias($class, $alias);
 	}
 
+	/**
+	 * Get the application Laravel or Lumen
+	 *
+	 * @return Laravel|Lumen
+	 * @throws UnknownApplicationException
+	 */
 	protected static function getApplication()
 	{
 		if(self::isLaravel()) {
@@ -55,6 +61,14 @@ class Application
 		}
 	}
 
+	/**
+	 * Handle static calls and route them to Laravel or Lumen
+	 *
+	 * @param $name
+	 * @param $args
+	 * @return mixed
+	 * @throws UnknownApplicationException
+	 */
 	public static function __callStatic($name, $args)
 	{
 		return call_user_func_array([self::getApplication(), $name], $args);
